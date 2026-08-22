@@ -1,6 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: single
+permalink: /
+author_profile: false
 ---
+
+<div class="typewriter-container">
+  <h1><span id="typewriter"></span><span class="cursor">|</span></h1>
+</div>
+
+<script src="{{ '/assets/js/typewriter.js' | relative_url }}"></script>

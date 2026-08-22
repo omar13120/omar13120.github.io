@@ -1,0 +1,95 @@
+---
+---
+
+@import "minimal-mistakes/skins/catppuccin_mocha";
+@import "minimal-mistakes";
+
+.page__footer {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  padding: 10px 20px !important;
+  margin: 0 !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pagination--pager {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.pagination--pager:hover {
+  text-decoration: underline;
+}
+
+.pagination--pager.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.pagination--pager:hover,
+.pagination--pager:focus,
+.pagination--pager:active {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: rgb(64.3137254902%, 67.137254902%, 76.5490196078%) !important;
+}
+
+// remove scrollbar
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+}
+
+// remove the outline when clicking a button
+a, button, .btn, .pagination--pager {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+    outline-offset: 2px;
+  }
+}
+
+// typewriter stuff
+.typewriter-container {
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.typewriter-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

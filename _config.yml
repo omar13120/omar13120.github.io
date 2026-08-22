@@ -30,18 +30,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "catppuccin_mocha"
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
-  
-header_pages:
-  - blog.markdown
-  - tools.markdown
+  - jekyll-compose
 
-social:
-  # email: you@example.com
-  github_username:  omar13120
-  # linkedin_username: yourusername
+atom_feed:
+  hide: true
+
+jekyll_compose:
+  post_layout: "single"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/omar13120"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
