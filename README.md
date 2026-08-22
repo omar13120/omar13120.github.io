@@ -1,1 +1,1 @@
-personal site
+Personal site built using Jekyll
